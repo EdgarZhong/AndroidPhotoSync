@@ -1,0 +1,35 @@
+﻿﻿﻿﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\AndroidPhotoSync.Core\AndroidPhotoSync.Core.csproj" />
+    <ProjectReference Include="..\AndroidPhotoSync.Infrastructure\AndroidPhotoSync.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    
+    <!-- Single File Publish Settings -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\platform-tools\adb.exe">
+      <Link>Resources\adb.exe</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\platform-tools\AdbWinApi.dll">
+      <Link>Resources\AdbWinApi.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\platform-tools\AdbWinUsbApi.dll">
+      <Link>Resources\AdbWinUsbApi.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
