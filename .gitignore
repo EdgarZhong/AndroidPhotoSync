@@ -20,5 +20,6 @@ Thumbs.db
 # User specific
 code_refer/
 test_backup/
-platform-tools/
+platform-tools/**
+!platform-tools/.gitkeep
 .dotnet/

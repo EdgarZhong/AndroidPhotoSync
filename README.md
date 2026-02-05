@@ -1,8 +1,8 @@
 # AndroidPhotoSync
 
-> A minimalist, high-speed incremental photo backup tool for Android, built on ADB.
+> A minimalist, high-speed incremental photo backup/sync tool for Android, built on ADB.
 >
-> 极简、高速的安卓照片增量备份工具，基于 ADB 协议。
+> 极简、高速的安卓照片增量备份工具，基于 ADB 工具。
 
 [中文文档 (Chinese Documentation)](#中文文档)
 
